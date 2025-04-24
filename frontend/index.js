@@ -144,7 +144,7 @@ function handleLogin() {
     .then((res) => {
       if (res.ok) {
         window.location.href =
-          "http://127.0.0.1:5500/frontend/dashboard/dashboard.html";
+          "http://127.0.0.1:5500/group_project/frontend/dashboard/dashboard.html";
       }
       return res.json();
     })
@@ -188,7 +188,7 @@ function getAllUsers() {
     });
 }
 
-getAllUsers();
+// getAllUsers();
 
 const table = document.createElement("table");
 table.style.border = "1px solid black";
@@ -234,4 +234,4 @@ function createTbody(users) {
 }
 
 document.body.appendChild(table);
-createThead();
+// createThead();
